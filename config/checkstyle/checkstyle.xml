@@ -3,25 +3,29 @@
 <module name="Checker">
 
     <module name="TreeWalker">
-        <module name="MethodLength">
-            <property name="tokens" value="METHOD_DEF"/>
-            <property name="max" value="15"/>
-            <property name="countEmpty" value="false"/>
-        </module>
-        <module name="Indentation">
-            <property name="caseIndent" value="0"/>
-        </module>
-        <module name="NestedForDepth">
-            <property name="max" value="3"/>
-        </module>
-        <module name="NestedIfDepth">
-            <property name="max" value="1"/>
-        </module>
-        <module name="LeftCurly">
-            <property name="option" value="eol"/>
-            <property name="tokens" value="CLASS_DEF,INTERFACE_DEF"/>
-        </module>
+				<module name="JavadocMethod"/>
+        <module name="LeftCurly"/>
         <module name="MagicNumber"/>
-        <module name="JavadocMethod"/>
+				<module name="MethodLength">
+    			<property name="max" value="15"/>
+ 				</module>
+				 <module name="Indentation">
+  				<property name="caseIndent" value="0"/>
+				</module>
+				<module name="NestedForDepth">
+  				<property name="max" value="0"/>
+				</module>
+				<module name="NestedIfDepth">
+  				<property name="max" value="1"/>
+				</module>
+				<module name="MagicNumber"/>
+				<module name="LeftCurly">
+      		<property name="option" value="nl"/>
+    		</module>
+    		<module name="RightCurly"/>
+				<module name="CyclomaticComplexity">
+  				<property name="max" value="15"/>
+				</module>
+		</module>
 
 </module>

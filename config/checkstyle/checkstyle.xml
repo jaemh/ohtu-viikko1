@@ -3,6 +3,7 @@
 <module name="Checker">
 
     <module name="TreeWalker">
+		<!--<module name="MagicNumber"/> -->
        <module name="MethodLength">
 			<property name="max" value="15"/>
 		</module>
@@ -15,7 +16,6 @@
 		<module name="NestedIfDepth">
 			<property name="max" value="1"/>
 		</module>
-		<module name="MagicNumber"/>
 		<module name="LeftCurly">
 			<property name="option" value="eol"/>
 		</module>

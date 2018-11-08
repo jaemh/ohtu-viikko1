@@ -3,8 +3,6 @@
 <module name="Checker">
 
     <module name="TreeWalker">
-				<module name="JavadocMethod"/>
-        <module name="LeftCurly"/>
         <module name="MagicNumber"/>
 				<module name="MethodLength">
     			<property name="max" value="15"/>
@@ -20,10 +18,9 @@
 				</module>
 				<module name="MagicNumber"/>
 				<module name="LeftCurly">
-      		<property name="option" value="nl"/>
+      		<property name="option" value="eol"/>
     		</module>
-    		<module name="RightCurly"/>
-				<module name="CyclomaticComplexity">
+    		<module name="CyclomaticComplexity">
   				<property name="max" value="15"/>
 				</module>
 		</module>
